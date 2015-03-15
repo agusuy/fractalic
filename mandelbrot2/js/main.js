@@ -1,23 +1,22 @@
+require(['./js/image', './js/canvas'], function(image, canvas){
 
-require(['./js/mandelbrot', './js/color', './js/canvas'], function(mandelbrot, color, canvas){
+	/*canvas dimensions*/
+	var canvasId = "myCanvas";
+	var w = 800;
+	var h = 600;
+
+	/*iterations*/
+	var maxIterations = 500;
+
+	/*bounds*/
+	var imMax = 1.2;
+	var imMin = -1.2;
+	var reMin = -2.3;
 
 	var myCanvas = new canvas.Canvas(w,h,canvasId);
 
-	for(x=0;x<w;x++){
-		for(y=0;y<h;y++){
+	var mandelbrot = new image.Fractal(w, h, maxIterations, imMax, imMin, reMin);
 
-			var result = mandelbrot.mandelbrotSet(x, y, maxIterations);
+	mandelbrot.calculatePicture(myCanvas);
 
-			var iteration = result.iteration;
-			var z_re = result.z_re;
-			var z_im = result.z_im;
-
-			var rgb = color.coloring(iteration, maxIterations, z_re, z_im);
-
-			myCanvas.putPixel(rgb[0],rgb[1],rgb[2], x,y);
-		}
-	}
-
-	myCanvas.render();
 });
-
