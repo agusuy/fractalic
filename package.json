@@ -1,0 +1,14 @@
+{
+	"name": "fractalic",
+	"description": "An experiment on the distributed rendering of the Mandelbrot set.",
+	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/agusuy/fractalic"
+	},
+	"dependencies": {
+		"source-map-support": "~0.2.6",
+		"node-png": "~0.4.3",
+		"capataz": "~0.1.2"
+	}
+}
