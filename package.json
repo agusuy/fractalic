@@ -9,6 +9,7 @@
 	"dependencies": {
 		"source-map-support": "~0.2.6",
 		"node-png": "~0.4.3",
-		"capataz": "~0.1.2"
+		"capataz": "~0.1.2",
+		"node-png": "~0.4.3"
 	}
 }
