@@ -2,8 +2,8 @@ require(['./js/image', './js/canvas'], function(image, canvas){
 
 	/*canvas dimensions*/
 	var canvasId = "myCanvas";
-	var w = 800;
-	var h = 600;
+	var w = 5500;
+	var h = 5000;
 
 	/*iterations*/
 	var maxIterations = 500;
