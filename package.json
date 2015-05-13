@@ -10,6 +10,9 @@
 		"source-map-support": "~0.2.6",
 		"node-png": "~0.4.3",
 		"capataz": "~0.1.2",
-		"node-png": "~0.4.3"
+		"imagejs": "~0.0.9"
+	},
+	"scripts": {
+		"start": "node src/main.js"
 	}
 }
