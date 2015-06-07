@@ -1,16 +1,16 @@
 define([/* deps */], function() {
 	var exports = {};
 
-	var Fractal = exports.Fractal = function Fractal(w, h, maxIterations, imMax, imMin, reMin){
+	var Fractal = exports.Fractal = function Fractal(w, h, maxIterations, imMax, imMin, reMax, reMin){
 		/* dimensions */
 		this.width = w;
 		this.height = h;
 		/* bounds */
-		this.imMin = imMin;
 		this.imMax = imMax;
+		this.imMin = imMin;
+		this.reMax = reMax;
 		this.reMin = reMin;
-		this.reMax = w * ((imMax - imMin) / h) + reMin;
-
+		
 		this.maxIterations = maxIterations;
 	};
 
